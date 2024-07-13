@@ -1,0 +1,132 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.bg-container{
+    background-color: black;
+    background-size: cover;
+    height: 1000vh;
+    text-align: center;
+}
+
+.head{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    color: blue;
+    position: absolute;
+    top: 6%;
+    left: 7%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+}
+
+header{
+    top: 0;
+    left:0;
+    right:0;
+    padding: 1rem 30%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: lightgreen;
+}
+
+.container{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 7px 7px;
+    font-size: 20px;
+    color: white;
+}
+
+::placeholder{
+    color: blue;
+}
+
+.search-bar button i{
+    width: 25px;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #cac7ff;
+    cursor: pointer;
+}
+
+#result-container {
+    margin-top: 20px;
+    display: none;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.result-item h3 {
+    font-weight: bold;
+    margin: 0;
+}

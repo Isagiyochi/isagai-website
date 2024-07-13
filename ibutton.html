@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsagiAnime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="iasagivid.css">
+
+</head>
+<body>
+    <div class="bg-container">
+        <a href="isagihome.html" class="head">IsagidubAnime</a>
+        <header>
+            <nav class="navbar">
+                <a href="iasagiindex.html">Home</a>
+                <a href="isagigenre.html">Genre</a>
+                <a href="#trends">Trends</a>
+                <a href="#latest">Latest Upload</a>
+            </nav>
+        </header>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search">
+            <button id="search-button" onclick="searchAnime()"><i class="fas fa-search" id="search-icon"></i></button>
+            <div id="result-container">
+                <div id="result-list"></div>
+            </div>
+        </div>
+        <video id="animeVideo" controls>
+            <source src="white.mp4" type="video/mp4">
+        </video>
+        <div id="controls">
+            <button class="btn" onclick="downloadVideo()">Download</button>
+        </div>
+    </div>
+    <script src="iscript.js"></script>
+    <script src="isagihome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

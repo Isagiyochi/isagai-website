@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsagiAnime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="iasagiindex.css">
+
+</head>
+<body>
+  <div class="bg-container">
+    <a href="isagihome.html" class="head">IsagidubAnime</a>
+    <header>
+        <nav class="navbar">
+            <a href="iasagiindex.html">Home</a>
+            <a href="isagigenre.html">Genre</a>
+            <a href="#trends">Trends</a>
+            <a href="#latest">Latest Upload</a>
+        </nav>
+    </header>
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <button id="search-button" onclick="searchAnime()"><i class="fas fa-search" id="search-icon"></i></button>
+      <div id="result-container">
+          <div id="result-list"></div>
+      </div>
+    </div>
+    <div>
+      <h1 class="heading">top dubbed anime</h1>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="ibutton.html"><img src="bluelock wallpaper.jpeg" class="image" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block">
+              <a href="ibutton.html"><h5 class="head-a">bluelock</h5></a>
+              <a href="ibutton.html"><p class="para">soccer players from across Japan gather for a controversial<br>
+                project designed to create the best and most egoistic striker in the world</p></a>
+              <a href="ibutton.html"><button class="btn">watch now</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="ibutton.html"><img src="1338560-h-63da662694d3.webp" class="image" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block">
+              <a href="ibutton.html"><h5 class="head-a">Tomodachi Game</h5></a>
+              <a href="ibutton.html"><p class="para">Yūichi and his childhood friends get caught in the <br>
+                Tomodachi Game after their school trip funds are stolen <br>
+                due to someone's debt.The game tests their friendship <br>
+                as they confront the lure of wealth, posing the ultimate challenge to their bonds.</p></a>
+                <a href=""><button class="btn">watch now</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="ibutton.html"><img src="hajimeno ippo.jpe" class="image" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block">
+              <a href="ibutton.html"><h5 class="head-a">hajimeno ippo</h5>
+              <p class="para">"Hajime no Ippo" depicts Ippo Makunouchi's journey from a <br>
+                bullied high schooler to a determined boxer, emphasizing themes <br>
+                of hard work, friendship, and personal growth in his <br>
+                quest to become the Japanese featherweight champion.</p></a>
+                <a href=""><button class="btn">watch now</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="hunter x hunter.jpe" class="image" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="head-a">hunter x hunter</h5>
+              <p class="para">"Hunter x Hunter" follows Gon Freecss, a young boy <br>
+              aspiring to become a Hunter like his absent father, <br>
+              as he embarks on a perilous journey, forming alliances <br>
+              and uncovering dark secrets in the pursuit of his goals.</p>
+              <a href=""><button class="btn">watch now</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="skeleton knight in another world.jpe" class="image" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="head-a">skeleton knight in another world</h5>
+              <p class="para">"Skeleton Knight in Another World" follows Arc, a gamer <br>
+                transported into a fantasy world as a skeletal knight, <br>
+                as he navigates challenges, forms alliances, and seeks redemption <br>
+                for his cursed existence while wielding unique abilities.</p>
+              <a href=""><button class="btn">watch now</button></a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <h1 class="heading2">Sports Anime</h1>
+    
+  </div>
+  <footer>
+    <p>©IsaigiAnime</p>
+  </footer>
+
+  <script src="isagihome.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
